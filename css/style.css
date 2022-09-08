@@ -1,0 +1,356 @@
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.clear {
+  clear: both;
+}
+.btn {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.5rem 2.25rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.line {
+  height: 0.3rem;
+  max-width: 3.5rem;
+  margin: 1.5rem auto;
+  opacity: 1.5;
+  background-color: #f4623a;
+}
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-content {
+  width: 80%;
+  margin: auto;
+}
+.header .start {
+  float: left;
+  width: 60%;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: bisque;
+}
+.header .nav {
+  float: left;
+  width: 40%;
+  list-style: none;
+}
+
+.header .nav li {
+  display: inline-block;
+}
+.header .nav li a {
+  text-decoration: none;
+  display: block;
+  color: bisque;
+  font-size: 1.15rem;
+  padding: 20px 20px;
+}
+/* home */
+.home {
+  background-image: url("../img/bg-masthead.jpg");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(92, 77, 66, 0.8);
+}
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home .title {
+  color: beige;
+  font-size: 3.5rem;
+}
+.home .src {
+  margin-top: 50px;
+  color: antiquewhite;
+  font-size: 1.15rem;
+}
+.home .btn1 {
+  background-color: #f4623a;
+  color: blanchedalmond;
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.home .line {
+  background-color: #f4623a;
+}
+
+/* about */
+.about {
+  text-align: center;
+  background-color: #f4623a;
+  padding: 15rem 0;
+  position: relative;
+  /* margin-bottom: 0; */
+}
+.about .title2 {
+  color: beige;
+  font-size: 1.75rem;
+}
+.about .para {
+  margin: 50px 0;
+  color: antiquewhite;
+  font-size: 1rem;
+
+  font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.about .line {
+  background-color: whitesmoke;
+}
+.about .btn2 {
+  font-weight: 800;
+}
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* service */
+.service {
+  /* padding: 20px 0; */
+  position: relative;
+}
+.service-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-bottom: 20rem;
+}
+.head {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+.service .line {
+  background-color: #f4623a;
+}
+/*  */
+.big {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  /* margin-top: 200px; */
+  margin-left: 10%;
+  margin-right: 5%;
+  display: block;
+}
+.big1 {
+  width: 20%;
+  float: left;
+  padding-top: 80px;
+  text-align: center;
+}
+.big2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.big3 {
+  margin-left: 5%;
+}
+
+.para3 {
+  margin-top: 5px;
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.head3 {
+  margin: 10px 0;
+  font-size: 1.75rem;
+  font-weight: 450;
+}
+.icons {
+  color: #f4623a;
+  font-size: calc(1.375rem + 1.5vw);
+}
+/* portoflio */
+.port {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  /* background-size: cover; */
+}
+.port-img {
+  overflow: hidden;
+  height: 60%;
+}
+.imgage {
+  width: 33.25%;
+  float: left;
+  /* height: 30%; */
+  position: relative;
+}
+.imgage .img-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 107, 8, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.imgage:hover .img-layer {
+  opacity: 1;
+}
+.imgage .info-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 60%; */
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imgage img {
+  width: 100%;
+}
+.port-head {
+  padding: 6rem 0;
+  text-align: center;
+  height: 40%;
+}
+.h2-port {
+  color: beige;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.btn3 {
+  font-weight: 800;
+  /* font-size: 0.75rem; */
+}
+/* contact */
+.contact {
+  text-align: center;
+  padding: 12rem 0;
+  position: relative;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.contact-container {
+  max-width: 540px;
+}
+.contact-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* labels */
+
+.label-container {
+  margin-top: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.labels {
+  position: relative;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.labels input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgba(119, 54, 54, 0.8);
+  border-radius: 2.5px;
+  background: white;
+  font-size: 1.5em;
+  color: rgb(55, 58, 59);
+}
+.labels span {
+  position: absolute;
+  left: 0;
+  padding: 6px;
+  pointer-events: none;
+  color: rgba(197, 192, 188, 0.8);
+}
+.form-submit {
+  background-color: #f4623a;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.5rem 5.25rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.last {
+  position: relative;
+  margin-top: 25rem;
+}
+.sec {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.phone1 {
+  font-size: calc(1.375rem + 2.5vw);
+  color: #6c757d;
+}
+
+/* .form-lable {
+}
+.form-control {
+} */
+
+/* footer */
+.footer {
+  margin-top: 30rem;
+  background-color: rgba(82, 78, 74, 0.03);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer p {
+  color: #6c757d;
+}
